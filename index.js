@@ -51,7 +51,7 @@ $(document).ready(function(){
             color('red', 'red', 'red', '#FF7373');
         if(min===0 && seg===0){
             const sound=document.createElement('audio');
-            sound.setAttribute('src', 'https://github.com/LeoBerbin/timer/raw/main/Beep_Short_05_Sound_Effect_Mp3_261.mp3'); 
+            sound.setAttribute('src', './assest/Beep_Short_05_Sound_Effect_Mp3_261.mp3'); 
             sound.setAttribute('id', 'beep');
             sound.play();
             $('#time-left').text( "00:00")
@@ -64,7 +64,7 @@ $(document).ready(function(){
     };
     $('button').on('click', (event) => {
         const e = event.target.id;
-        const src = e === 'start_stop' ? 'https://raw.githubusercontent.com/LeoBerbin/timer/main/Beep_Short_03_Sound_Effect_Mp3_259.mp3' : !count.run ? 'https://github.com/LeoBerbin/timer/raw/main/Beep_Short_04_Sound_Effect_Mp3_260.mp3' : ''
+        const src = e === 'start_stop' ? './assest/Beep_Short_03_Sound_Effect_Mp3_259.mp3' : !count.run ? './assest/Beep_Short_04_Sound_Effect_Mp3_260.mp3' : ''
         const audio = document.createElement('audio'); 
         audio.setAttribute('src', src);
         audio.play();
