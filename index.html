@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="./index.css">
+    <title>Timer</title>
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+<script src="./index.js"></script>
+<header>
+    <h1>Welcome</h1>
+</header>
+<div id="timer">
+    <div id="break">
+        <p id="break-label">break</p>
+        <button id="break-decrement" value="break-">-</button>        
+        <span id="break-length">5</span>
+        <button id="break-increment" value="break+">+</button>
+    </div>
+    <div id="session">
+        <p id="session-label">session</p>
+        <button id="session-decrement" value="session-">-</button>
+        <span id="session-length">25</span>
+        <button id="session-increment" value="session+">+</button>
+    </div>
+    <div id="clock">
+        <div id="arrow-min"></div>
+        <div id="center"></div>
+        <div id="arrow-seg"></div>
+    </div>
+    <div id="display">
+        <span id="timer-label">session</span>
+        <span id="time-left">25:00</span>
+        <button id="start_stop">play</button>
+        <button id="reset">reset</button>
+    </div>
+</div>
+</body>
+</html>
